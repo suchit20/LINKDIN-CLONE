@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linkdin.in</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"> <span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/suchitprofile.JPG" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+
+        </div>
+
+        <!-------------------profile dropdown menu---------------------->
+
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/suchitprofile.JPG">
+                    <div>
+                        <h3>Suchit Asthana</h3>
+                        <a href="profile.html">See your Profile</a>
+                    </div>
+
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!----------------------navbar end----------------------->
+
+    <div class="container">
+
+        <!-------------------left sidebar---------------------->
+
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/suchitprofile.JPG">
+                    <h1>Suchit Asthana</h1>
+                    <h3>Web Developer @ Microsoft | Bangalore </h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>Your post views <span>800</span>
+                        <li>Your Connections <span>200</span></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link" id="sidebarActivity">
+                    <a href="#"><img src="images/items.png"> My items</a>
+                    <a href="#"><img src="images/premium.png"> Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png"> Web Development</a>
+                <a href="#"><img src="images/recent.png">User Interface </a>
+                <a href="#"><img src="images/recent.png"> Online Learning</a>
+                <a href="#"><img src="images/recent.png">Learn Tailwind CSS </a>
+                <a href="#"><img src="images/recent.png">Learn Javascript </a>
+                <a href="#"><img src="images/recent.png"> Build many projects</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png">Web Design Group</a>
+                <a href="#"><img src="images/group.png">HTML & CSS Learners</a>
+                <a href="#"><img src="images/group.png">Python & Javascript Group</a>
+                <a href="#"><img src="images/group.png">Learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png">webdevelopment</a>
+                <a href="#"><img src="images/hashtag.png">userinterface</a>
+                <a href="#"><img src="images/hashtag.png">onlinelearninf</a>
+                <a href="#"><img src="images/hashtag.png">html</a>
+                <a href="#"><img src="images/hashtag.png">css</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+
+
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
+        </div>
+
+        <!-------------------main content------------------------>
+
+
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/suchitprofile.JPG">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png"> Photo</li>
+                    <li><img src="images/video.png">Video</li>
+                    <li><img src="images/event.png">Event</li>
+                    <li> Post</li>
+
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by : <span>top <img src="images/down-arrow.png"></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Alisha Feona</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id neque consequuntur numquam eum
+                    blanditiis, rerum praesentium, iusto harum ratione earum? Accusantium consectetur, illum doloremque
+                    facere nam nulla ad cupiditate.</p>
+                <img src="images/post-image-1.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users"> Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 Comments &middot; 40 Shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/suchitprofile.JPG" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id neque consequuntur numquam eum
+                    blanditiis, rerum praesentium, iusto harum ratione earum? Accusantium consectetur, illum doloremque
+                    facere nam nulla ad cupiditate.</p>
+                <img src="images/post-image-2.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users"> Abhinav Mishra and 110 others</span>
+                    </div>
+                    <div>
+                        <span>30 Comments &middot; 30 Shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/suchitprofile.JPG" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h1>Jackson warner</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>7 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id neque consequuntur numquam eum
+                    blanditiis, rerum praesentium, iusto harum ratione earum? Accusantium consectetur, illum doloremque
+                    facere nam nulla ad cupiditate.</p>
+                <img src="images/post-image-3.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users"> Rahul Kumar and 70 others</span>
+                    </div>
+                    <div>
+                        <span>20 Comments &middot; 20 Shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/suchitprofile.JPG" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h1>John Doe</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>5 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id neque consequuntur numquam eum
+                    blanditiis, rerum praesentium, iusto harum ratione earum? Accusantium consectetur, illum doloremque
+                    facere nam nulla ad cupiditate.</p>
+                <img src="images/post-image-4.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Shubham Mishra and 80 others</span>
+                    </div>
+                    <div>
+                        <span>25 Comments &middot; 30 Shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/suchitprofile.JPG" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="imageslike.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="imagescomment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="imagesshare.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="imagessend.png">
+                        <span>Send</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-----------------------right sidebar----------------------->
+
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h1>Trending News</h1>
+                <a href="#">High demand for skilled manpower</a>
+                <span> 1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Careers growing horizontally too</a>
+                <span> 19h ago &middot; 1,934 readers</span>
+
+                <a href="#">Less work visa for US , more for UK</a>
+                <span> 1d ago &middot; 27,290 readers</span>
+
+                <a href="#">More hiring = Higher confidence</a>
+                <span> 18h ago &middot; 8,934 readers</span>
+
+                <a href="#">Mukesh Ambani is the world's third richest</a>
+                <span> 12h ago &middot; 5,434 readers</span>
+                <a href="#" class="read-more-links">Read More</a>
+
+
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="images/suchitprofile.JPG">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiamoi</b>
+                <a href="#" class=" ad-link"> Learn More</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="">About</a>
+                <a href="">Accessibility</a>
+                <a href="">Help Center</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Advertising</a>
+                <a href="">Get the App</a>
+                <a href="">More</a>
+                <div class="copyright-msg">
+                    <img src="images/logo.png">
+                    <p>Linkedup &copy 2023 . All Rights Reserved.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
